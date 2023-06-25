@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Press+Start+2P&family=Syncopate&family=Ubuntu:wght@300&display=swap');* {
+    font-family: 'Inconsolata', monospace;
+}
+body {
+    padding-top: 60px;
+    background-color: #e5a7a7;
+    background:url('im22.jpg') no-repeat;
+        
+    background-size: cover;
+    background-position: center;
+
+  }
+  
+  h1 {
+    text-align: center;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(10%);
+    text-align: center;
+    color: #f9f9f9;
+    font-family: 'Syncopate', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 0 10PX;
+    width: 100%;
+    max-width: 600px;
+  }
+  .blurr{
+    background-image: url('im22.jpg');
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: blur(8px);
+  }
+ h1 span {
+    color: #000000;
+ }
+  .converter-wrapper {
+    margin: 80px auto;
+    width: 100%;
+    max-width: 600px;
+    padding: 54px;
+  }
+  
+  .converter-wrapper input {
+   
+    font-weight: 700;
+    font-size: 1.2em;
+    color: black;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    height: 40px;
+    box-sizing: border-box;
+  }
+  
+  .converter-wrapper span {
+    position: relative;
+    display: inline-block;
+   
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  .converter-wrapper span select {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: inherit;
+    padding: 10px;
+    width: 100%;
+    border: 0;
+    margin: 0;
+    border-radius: 5px;
+    text-indent: 0.01px;
+    text-overflow: '';
+  }
+  
+  .converter-wrapper span::before,
+  .converter-wrapper span::after {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+  }
+  
+  .converter-wrapper span::after { 
+    content: "\25BC";
+    height: 1em;
+    font-size: .625em;
+    line-height: 1;
+    right: 1.5em;
+    top: 50%;
+    margin-top: -.5em;
+    color: #000000;
+  }
+  
+  .converter-wrapper span::before { 
+    width: 2.5em;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 0;
+    background-color: #f8f8f8;
+  }
+  
+  .converter-side-a,
+  .converter-side-b {
+    float: left;
+    margin-top: 10px;
+    box-sizing: border-box;
+    width: 45%;
+  }
+  
+  .converter-equals {
+    float: left;
+    box-sizing: border-box;
+    width: 10%;
+    color: #e2cfcf;
+    font-size: 2.4em;
+    line-height: 0;
+    text-align: center;
+    border-radius: 3px;
+  }
+  
+  .converter-side-a {
+    padding-right: 10px;
+  }
+  
+  .converter-side-b {
+    padding-left: 10px;
+  }
